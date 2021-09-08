@@ -1,0 +1,68 @@
+@charset "EUC-KR";
+
+.wrap{
+    min-width:1300px;
+    max-width:1920px;
+}
+
+.content:after{
+    content:"";
+    display:block;
+    clear:both
+}
+
+.left-con{
+    width:250px;
+    float:left;
+}
+
+.right-con{
+    width:1000px;
+    padding:20px;
+    box-sizing:border-box;
+    float:left
+}
+
+.top {
+	height:80px;
+}
+
+.top a {
+	text-decoration:none;
+}
+
+.top-logo {
+	padding: 0 20px;
+	line-height: 60px;
+}
+
+.top-search {
+	float: right;
+	padding: 0 30px;
+	line-height: 60px;
+}
+
+.top-button {
+	display:inline-block;
+    padding:0 15px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+    background-color: #92cbff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border:0
+}
+
+.top-text {
+	height: 30px;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+}
+
+.bottom-name {
+	float: left;
+}

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@charset "EUC-KR";
+
+.cf:after{
+	content:"";
+	display:block;
+	clear:both;
+	float: right;
+}
+
+.my-box {
+	padding:20px 0 20px 10px;
+	font-size:23px;
+	font-weight:bold;
+}
+
+.newranking-button {
+	border:0;
+	background-color:#FFFFFF;
+}
+
+.newranking-example01 {
+	height: auto;
+	display: none;
+}
+
+.newranking-example01 td {
+	border: 0
+}
+
+.newranking-example01 tr a {
+	color: #86929f
+}
+
+.newranking-example01 td.on a {
+	color: #1dcdff
+}

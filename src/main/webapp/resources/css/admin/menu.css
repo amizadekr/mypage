@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.mng-nav {
+	width: 100%;
+
+}
+
+.mng-nav ul {
+	height: calc(100vh - 127px);
+	padding: 0 22px 0 16px;
+	list-style: none;
+}
+
+.mng-nav ul li {
+	border-bottom: 1px solid #4e5b6c
+}
+
+.mng-nav ul li.on a {
+	color: #1dcdff
+}
+
+.mng-nav ul li a {
+	display: block;
+	text-decoration:none; /*텍스트 밑줄 제거*/
+	padding: 0 3px;
+	height: 37px;
+	line-height: 37px;
+	font-size: 14px;
+	color: #000000;
+}
+
+.mng-nav .menu .example01 {
+	height: auto;
+	display: none;
+}
+
+.mng-nav .menu .example01 li {
+	border: 0
+}
+
+.mng-nav .menu .example01 li a {
+	color: #86929f
+}
+
+.mng-nav .menu .example01 li.on a {
+	color: #1dcdff
+}

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@charset "EUC-KR";
+
+.cf:after{
+	content:"";
+	display:block;
+	clear:both;
+	float: right;
+}
+
+.my-box {
+	padding:20px 0 20px 10px;
+	font-size:23px;
+	font-weight:bold;
+}
+
+.follow-button {
+	border:0;
+	background-color:#FFFFFF;
+}
+
+.follow-example01 {
+	height: auto;
+	display: none;
+}
+
+.follow-example01 td {
+	border: 0
+}
+
+.follow-example01 tr a {
+	color: #86929f
+}
+
+.follow-example01 td.on a {
+	color: #1dcdff
+}
