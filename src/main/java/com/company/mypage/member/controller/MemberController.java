@@ -56,13 +56,13 @@ public class MemberController {
 		}
 
 		//로그아웃
-		@RequestMapping("?page=logout")
+		@RequestMapping("/logout")
 		public String logout(HttpSession session, Model model) {
 			
 			session.invalidate();
 			
 			String msg = "로그아웃 되었습니다";
-			String loc = "redirect:/";
+			String loc = "/";
 			model.addAttribute("msg", msg);
 			model.addAttribute("loc", loc);
 			return "common/msg";

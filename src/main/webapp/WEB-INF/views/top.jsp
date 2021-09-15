@@ -11,13 +11,6 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/resources/css/reset.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/resources/css/admin/template.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script>
-	$(document).ready(function() {
-		$("#logoutBtn").on("click", function() {
-			location.href = "redirect:/";
-		})
-	})
-</script>
 </head>
 <body>
 	<div class="top">
@@ -30,7 +23,7 @@
 			<span>
 			|
 			</span>
-			<form name="loginForm" method="post" action="?page=logout">
+			<div>
 				<c:choose>
 					<c:when test="${memberVo==null}">
 						<div class="account">
@@ -43,11 +36,11 @@
 						<div class="account">
 							<a href="/mypage" class="blue">내 서재</a>
 							<span>|</span>
-							<button type="submit" id="logoutBtn" class="logoutBtn">로그아웃</button>
+							<a href="./logout" class="logoutBtn">로그아웃</a>
 						</div>
 					</c:otherwise>
 				</c:choose>
-			</form>
+			</div>
 		</span>
 	</div>
 </body>
