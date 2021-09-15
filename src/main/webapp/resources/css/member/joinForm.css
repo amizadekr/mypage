@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+form.container section {
+	box-sizing: border-box;
+	padding: 24px;
+	background-color: #fff
+}
+
+@media only screen and (max-width: 719px) {
+	form.container section {
+		margin: 8px auto
+	}
+}
+
+@media only screen and (min-width: 720px) {
+	form.container section {
+		margin: 16px auto;
+		width: 720px
+	}
+}
+
+form.container section h1 {
+	margin-bottom: 8px;
+	line-height: 30px;
+	color: #292929;
+	font-size: 22px;
+	font-weight: bold
+}
+
+form.container section p.description {
+	margin-bottom: 8px;
+	line-height: 20px;
+	color: #4c4c4c;
+	font-size: 14px
+}
+
+form.container section p.description strong {
+	color: #0aafdf
+}
+
+form.container section p.rules {
+	line-height: 18px;
+	color: #0aafdf;
+	font-size: 12px
+}
+
+form.container section h2 {
+	margin-top: 48px;
+	line-height: 26px;
+	color: #292929;
+	font-size: 18px;
+	font-weight: bold
+}
+
+form.container section div.input {
+	margin-top: 16px
+}
+
+form.container section div.input div.label label {
+	display: inline-block;
+	line-height: 20px;
+	color: #737373;
+	font-size: 14px;
+	font-weight: bold
+}
+
+form.container section div.input input[type=email],
+	form.container section div.input input[type=text] {
+	display: block;
+	box-sizing: border-box;
+	margin-top: 4px;
+	padding: 8px;
+	border: 1px solid #f2f2f2;
+	border-radius: 3px;
+	width: 100%;
+	height: 36px;
+	line-height: 20px;
+	color: #292929;
+	font-size: 14px;
+	background-color: #f9f9f9;
+	background-repeat: no-repeat;
+	background-position: right 8px center;
+	background-size: 24px 24px
+}
+
+form.container section div.input input[type=email]:-moz-read-only,
+	form.container section div.input input[type=text]:-moz-read-only
+	{
+	background-color: #fff
+}
+
+form.container section div.input input[type=email]:focus,
+	form.container section div.input input[type=email]:read-only,
+	form.container section div.input input[type=text]:focus,
+	form.container section div.input input[type=text]:read-only
+	{
+	background-color: #fff
+}
+
+@media only screen and (min-width: 720px) {
+	form.container section div.input input[type=email].large,
+		form.container section div.input input[type=text].large
+		{
+		max-width: 480px
+	}
+	form.container section div.input input[type=email].medium,
+		form.container section div.input input[type=text].medium
+		{
+		
+	}
+	form.container section div.input input[type=email].small,
+		form.container section div.input input[type=text].small
+		{
+		display: inline-block;
+		max-width: 104px
+	}
+}
+
+@media only screen and (max-width: 719px) {
+	form.container section div.input input[type=email].medium,
+		form.container section div.input input[type=text].medium
+		{
+		max-width: 240px
+	}
+	form.container section div.input input[type=email].small,
+		form.container section div.input input[type=text].small
+		{
+		display: inline-block;
+		max-width: 72px
+	}
+}
+
+form.container section div.input textarea {
+	display: block;
+	box-sizing: border-box;
+	margin-top: 4px;
+	padding: 8px;
+	border: 1px solid #f2f2f2;
+	border-radius: 3px;
+	width: 100%;
+	height: 240px;
+	line-height: 20px;
+	color: #292929;
+	font-size: 14px;
+	background-color: #f9f9f9
+}
+
+form.container section div.input textarea:focus {
+	background-color: #fff
+}
+
+form.container section div.input div.file {
+	display: flex;
+	margin-top: 4px
+}
+
+form.container section div.input div.file input[type=file]
+	{
+	width: 0;
+	height: 0;
+	opacity: 0
+}
+
+form.container section div.input div.file a.button {
+	padding: 0 12px;
+	border-radius: 3px;
+	line-height: 36px;
+	color: #fff;
+	font-size: 14px;
+	background-color: #1dcdff;
+	cursor: pointer
+}
+
+form.container section div.input div.file span.name {
+	flex: 1;
+	margin-left: 8px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #737373;
+	font-size: 12px;
+	align-self: center
+}
+
+form.container section div.input span.delimiter {
+	display: inline-block;
+	width: 24px;
+	line-height: 40px;
+	color: #737373;
+	font-size: 16px;
+	text-align: center
+}
+
+form.container section div.agreement label {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	cursor: pointer
+}
+
+form.container section div.agreement label input[type=checkbox]
+	{
+	display: none
+}
+
+form.container section div.agreement label input[type=checkbox]:checked
+	~figure.checkbox {
+	background-image:
+		url("/images/pages/support/agreement.checkbox.checked.png")
+}
+
+form.container section div.agreement label figure.checkbox
+	{
+	margin-right: 4px;
+	width: 16px;
+	height: 16px;
+	background-image:
+		url("/images/pages/support/agreement.checkbox.unchecked.png");
+	background-size: 16px 16px
+}
+
+form.container section div.agreement label span {
+	color: #292929;
+	font-size: 12px
+}
+
+form.container section div.agreement div.text {
+	box-sizing: border-box;
+	padding: 8px;
+	border: 1px solid #f2f2f2;
+	border-radius: 3px;
+	line-height: 18px;
+	color: #737373;
+	font-size: 12px;
+	background-color: #f9f9f9
+}
+
+form.container section div.agreement div.text ul {
+	padding-left: 12px
+}
+
+form.container section div.agreement div.text ul li {
+	list-style-type: disc
+}
+
+form.container section input[type=submit] {
+	margin-top: 24px;
+	border: 0;
+	border-radius: 3px;
+	width: 100%;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #1dcdff
+}
+
+form.container section div.input div.radio {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 4px
+}
+
+form.container section div.input div.radio label {
+	display: flex;
+	align-items: center;
+	margin-right: 4px;
+	padding: 0 4px;
+	height: 30px;
+	cursor: pointer
+}
+
+form.container section div.input div.radio label input[type=radio]
+	{
+	display: none
+}
+
+form.container section div.input div.radio label input[type=radio]:checked
+	~figure.radio {
+	background-image: url("/images/pages/support/input.radio.checked.png")
+}
+
+form.container section div.input div.radio label figure.radio
+	{
+	margin-right: 4px;
+	width: 16px;
+	height: 16px;
+	background-image: url("/images/pages/support/input.radio.unchecked.png");
+	background-size: 16px 16px
+}
+
+form.container section div.input div.radio label span {
+	color: #292929;
+	font-size: 14px
+}

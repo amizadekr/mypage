@@ -4,6 +4,8 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.company.mypage.member.vo.JoinVo;
+import com.company.mypage.member.vo.LoginVo;
 import com.company.mypage.member.vo.MemberVo;
 
 
@@ -14,7 +16,7 @@ public class MemberDao {
 	private SqlSessionTemplate sqlSession;
 	
 	//회원가입
-	public int insertMember(MemberVo member) {
+	public int insertMember(JoinVo member) {
 		return sqlSession.insert("member.insertMember", member);
 	}
 	
@@ -31,8 +33,9 @@ public class MemberDao {
 	}
 	
 	//로그인
-	public MemberVo login(MemberVo member) {
-		return sqlSession.selectOne("member.selectLogin", member);
+	public MemberVo selectLogin(LoginVo member) {
+		return (MemberVo) sqlSession.selectOne("member.selectLogin", member);
 	}
+
 	
 }

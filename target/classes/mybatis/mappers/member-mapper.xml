@@ -4,21 +4,25 @@
 <mapper namespace="member">
 	
 	<!-- 회원가입 -->
-	<insert id="insertMember" parameterType="com.company.mypage.member.vo.MemberVo" >
+	<insert id="insertMember" parameterType="com.company.mypage.member.vo.JoinVo" >
 		insert into member(
 			userNo,
 			email,
 			password,
 			userName,
-			nickName,
-			phone
+			phone1,
+			phone2,
+			phone3,
+			nickName
 		) values (
-			mypage_mem.nextval,
+			SEQ_mem.nextval,
 			#{email},
 			#{password},
 			#{userName},
-			#{nickName},
-			#{phone1}||-||#{phone2}||-||#{phone3}
+			#{phone1},
+			#{phone2},
+			#{phone3},
+			#{nickName}
 		)
 	</insert>
 	
@@ -37,12 +41,10 @@
 	</select>
 	
 	<!-- 로그인 -->
-	<select id="selectLogin" resultType="com.company.mypage.member.vo.MemberVo">
-		select 
-			email, password
+	<select id="selectLogin" parameterType="com.company.mypage.member.vo.LoginVo" resultType="com.company.mypage.member.vo.MemberVo">
+		select *
 		from member
-			where email = #{email}
-			and password = #{password}
+		where email = #{email} and password = #{password} and status = 'N'
 	</select>
 	
 </mapper>
