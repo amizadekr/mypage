@@ -6,12 +6,11 @@
 }
 
 .mng-nav ul {
-	height: calc(100vh - 127px);
 	padding: 0 22px 0 16px;
 	list-style: none;
 }
 
-.mng-nav ul li {
+.menu01 .menu_01 {
 	border-bottom: 1px solid #4e5b6c
 }
 
@@ -29,19 +28,23 @@
 	color: #000000;
 }
 
-.mng-nav .menu .example01 {
+.mng-nav .menu01 .example01 {
 	height: auto;
 	display: none;
 }
 
-.mng-nav .menu .example01 li {
+.mng-nav .menu01 .example01 li {
 	border: 0
 }
 
-.mng-nav .menu .example01 li a {
+.mng-nav .menu01 .example01 li a {
 	color: #86929f
 }
 
-.mng-nav .menu .example01 li.on a {
+.mng-nav .menu01 .example01 li.on a {
 	color: #1dcdff
+}
+
+.mng-nav .menu02 {
+	height: calc(100vh - 127px);
 }

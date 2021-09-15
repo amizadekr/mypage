@@ -61,36 +61,50 @@
 <body>
 	<div class="left-con">
 		<nav class="mng-nav">
-			<ul>
-				<li class="menu">
+			<ul class="menu01">
+				<li class="menu_01">
 				<a href="#" id="spreadBtn01" class="a01">홈</a>
 					<ul id="hiddenList01" class="example01">
 						<li class="gnb00"><a href="?page=newtoon.jsp">신작</a></li>
 						<li class="gnb01"><a href="?page=newrankingtoon.jsp">랭킹</a></li>
 					</ul>
 				</li>
-				<li class="menu">
+				<li class="menu_01">
 				<a href="#" id="spreadBtn02" class="a01">웹툰</a>
 					<ul id="hiddenList02" class="example01">
 						<li class="gnb02"><a href="?page=toon.jsp">신규</a></li>
 						<li class="gnb03"><a href="?page=toonranking.jsp">랭킹</a></li>
-						<li class="gnb03"><a href="?page=toonfollow.jsp">팔로우</a></li>
 					</ul>
 				</li>
-				<li class="menu">
+				<li class="menu_01">
 				<a href="#" id="spreadBtn03" class="a01">소설</a>
 					<ul id="hiddenList03" class="example01">
 						<li class="gnb02"><a href="?page=novel.jsp">신규</a></li>
 						<li class="gnb03"><a href="?page=novelranking.jsp">랭킹</a></li>
-						<li class="gnb03"><a href="?page=novelfollow.jsp">팔로우</a></li>
 					</ul>
 				</li>
-				<li class="menu">
+				<li class="menu_01">
 				<a href="#" id="spreadBtn04" class="a01">일러스트</a>
 					<ul id="hiddenList04" class="example01">
 						<li class="gnb02"><a href="?page=illust.jsp">신규</a></li>
 						<li class="gnb03"><a href="?page=illustranking.jsp">랭킹</a></li>
-						<li class="gnb03"><a href="?page=illustfollow.jsp">팔로우</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="menu02">
+				<li class="menu_02">
+				<a href="#" id="" class="a01">구독</a>
+					<ul>
+						<li><a href="">닉네임1</a></li>
+						<li><a href="">닉네임2</a></li>
+						<li><a href="">닉네임3</a></li>
+						<li><a href="">닉네임4</a></li>
+						<li><a href="">닉네임5</a></li>
+						<li><a href="">닉네임6</a></li>
+						<li><a href="">닉네임7</a></li>
+						<li><a href="">닉네임8</a></li>
+						<li><a href="">닉네임9</a></li>
+						<li><a href="">닉네임0</a></li>
 					</ul>
 				</li>
 			</ul>
