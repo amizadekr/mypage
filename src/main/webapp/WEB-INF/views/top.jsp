@@ -22,9 +22,21 @@
 			<input type="text" placeholder="'나혼자레벨업'인기검색어" class="top-text">
 				<button type="button" class="top-button">검색</button>
 			|
-			<a href="/loginform" class=""> 로그인 </a>
-			|
-			<a href="?page=/member/joinForm" class=""> 회원가입 </a>
+			<c:choose>
+				<c:when test="${member==null }">
+					<div class="account">
+						<a href="?page=/member/loginForm" class="blue">로그인</a>
+						<span>|</span>
+						<a href="?page=/member/joinForm" class="white">회원가입</a>
+					</div>
+				</c:when>
+				<c:otherwise>
+					<div class="account">
+						<a href="/myPage" class="blue">마이페이지</a>
+						<a href="/logout" class="white">로그아웃</a>
+					</div>
+				</c:otherwise>
+			</c:choose>
 		</span>
 	</div>
 </body>

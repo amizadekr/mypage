@@ -8,21 +8,41 @@
 		insert into member(
 			userNo,
 			email,
+			password,
 			userName,
 			nickName,
-			password,
-			phone1,
-			phone2,
-			phone3
+			phone
 		) values (
-			seq_mem.nextval,
+			mypage_mem.nextval,
 			#{email},
+			#{password},
 			#{userName},
 			#{nickName},
-			#{password},
-			#{phone1},
-			#{phone2},
-			#{phone3}
+			#{phone1}||-||#{phone2}||-||#{phone3}
 		)
 	</insert>
+	
+	<!-- 이메일 증복체크 -->
+	<select id="emailCheck" resultType="int">
+		select count(*)
+		from member
+		where email = #{email}
+	</select>
+	
+	<!-- 닉네이 증복체크 -->
+	<select id="nickNameCheck" resultType="int">
+		select count(*)
+		from member
+		where nickName = #{nickName}
+	</select>
+	
+	<!-- 로그인 -->
+	<select id="selectLogin" resultType="com.company.mypage.member.vo.MemberVo">
+		select 
+			email, password
+		from member
+			where email = #{email}
+			and password = #{password}
+	</select>
+	
 </mapper>

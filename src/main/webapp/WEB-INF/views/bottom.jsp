@@ -15,9 +15,13 @@
 </head>
 <body>
 <div class="bottom-name">
-	<p>
-		하단
-	</p>
+	<footer>
+		<a href="" class="">© MyPage</a>
+    	<a href="">이용약관</a>
+		<a href="" class="">개인정보처리방침</a>
+		<a href="">커뮤니티이용규칙</a>
+		<a href="">문의하기</a>
+	</footer>
 </div>
 </body>
 </html>
